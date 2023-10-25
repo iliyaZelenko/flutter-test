@@ -88107,7 +88107,7 @@ return A.S($async$wM,r)}}
 A.alT.prototype={
 $1(a){var s,r="\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0432\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u0435\u043a\u0441\u0442"
 if(a.length===0)return r
-s=A.bZ("^[a-zA-Z0-9]+$",!0,!1)
+s=A.bZ("^[a-zA-Z]+$",!0,!1)
 return s.b.test(a)?null:r},
 $S:62}
 A.alU.prototype={

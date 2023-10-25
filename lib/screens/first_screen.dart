@@ -43,7 +43,7 @@ class _FirstScreenState extends State<FirstScreen> {
               if (value == null || value.isEmpty) {
                 return msg;
               }
-              return RegExp(r"^[a-zA-Z0-9]+$").hasMatch(value) ? null : msg;
+              return RegExp(r"^[a-zA-Z]+$").hasMatch(value) ? null : msg;
             },
           ),
           TextFormField(
