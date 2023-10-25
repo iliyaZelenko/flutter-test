@@ -1,16 +1,41 @@
-# test_project
+# Тестовое задание
 
-A new Flutter project.
+Цель: Разработать мобильное приложение на Flutter с тремя экранами.
 
-## Getting Started
+Технические ограничения:
 
-This project is a starting point for a Flutter application.
+Дизайн может быть выбран произвольно.
+Использование UI-китов запрещено.
+Работаем только с чистым Flutter. Пожалуйста, не используйте Flutter Flow.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Описание задачи:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Форма ввода данных (Экран 1):
+
+Поля ввода для:
+Текстового поля (только буквы).
+Пароля.
+Даты.
+Цифрового поля.
+Загрузка изображения.
+Кнопка для подтверждения введенных данных.
+Для каждого поля ввода необходима валидация с предупреждением в случае ошибки.
+
+
+Калькулятор (Экран 2):
+
+Стандартный калькулятор со следующими операциями:
+Сложение (+).
+Вычитание (-).
+Умножение (*).
+Деление (/).
+
+
+Погода (Экран 3):
+
+Интеграция с любым доступным API погоды.
+Отображение актуальной погоды в Саратове с автоматическим обновлением каждые 2-3 секунды.
+Поле для ввода названия другого города и отображение погоды для этого города.
+
