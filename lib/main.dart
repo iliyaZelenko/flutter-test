@@ -40,13 +40,19 @@ class ScreensButtons extends StatelessWidget {
   static const _spacer = SizedBox(
     width: 10,
   );
+  static const _activeColor = Colors.green;
 
   @override
   Widget build(BuildContext context) {
+    final current = ModalRoute.of(context)?.settings.name;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: current == '/' ? _activeColor : null,
+          ),
           onPressed: () {
             Navigator.pushNamed(context, '/');
           },
@@ -54,6 +60,9 @@ class ScreensButtons extends StatelessWidget {
         ),
         _spacer,
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: current == '/second' ? _activeColor : null,
+          ),
           onPressed: () {
             Navigator.pushNamed(context, '/second');
           },
@@ -61,6 +70,9 @@ class ScreensButtons extends StatelessWidget {
         ),
         _spacer,
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: current == '/third' ? _activeColor : null,
+          ),
           onPressed: () {
             Navigator.pushNamed(context, '/third');
           },
