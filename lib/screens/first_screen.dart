@@ -38,12 +38,12 @@ class _FirstScreenState extends State<FirstScreen> {
               labelText: 'Текстовое поле (только буквы)',
             ),
             validator: (value) {
-              const msg = 'Пожалуйста, введите текст';
-
               if (value == null || value.isEmpty) {
-                return msg;
+                return 'Пожалуйста, введите текст';
               }
-              return RegExp(r"^[a-zA-Z]+$").hasMatch(value) ? null : msg;
+              return RegExp(r"^[a-zA-Z]+$").hasMatch(value)
+                  ? null
+                  : 'Пожалуйста, введите только буквы';
             },
           ),
           TextFormField(
